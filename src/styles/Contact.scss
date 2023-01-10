@@ -1,0 +1,66 @@
+@import "colors"; 
+.container{
+    height:100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $second;
+    >div{
+        width:70%;
+        height: 60vh;
+        border-radius: 0 200px 200px 0;
+        background-color: $first;
+        >h2{
+            text-transform: uppercase;
+            text-align: center;
+            margin: 4rem 0;
+        }
+        >form{
+            width: 80%;
+            margin: 0 5rem;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            >div{
+                margin: 0.5rem 0;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                width: 60%;
+                >label{
+                    font: 200 1.3rem $text1;
+                    width: 20%;
+                    margin: 0 1rem;
+                }
+                >input{
+                    width: 70%;
+                    height: 2rem;
+                    // background-color: rgb(239, 238, 237);
+                    border: 2px solid rgb(201, 200, 199);
+                    border-radius: 2px;
+                    color: $second;
+                    align-self: stretch;
+                    outline: none;
+                    // margin: 0.5rem;
+                }
+            }
+            >button{
+                margin: 2rem 0;
+                width: 20%;
+                height: 2rem;
+                background-color: $third;
+                border-radius: 5px;
+                color: $first;
+                font: 100 1rem $text1;
+                &:hover{
+                    opacity: 0.8;
+                    
+                }
+            }
+        }
+        
+    }
+}
